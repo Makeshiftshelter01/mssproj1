@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700|Oswald:400,700&amp;subset=korean" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Your Title Goes here</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- 메뉴 -->
+        <nav class="main-nav">
+            <ul>
+                <li class = 'company-name'>
+                    
+                    <a href="index.html" >Company Name</a>
+                </li>
+                <li class = 'menu'><a href="#" >Results</a></li>
+                <li class = 'menu'><a href="#">Paper</a></li>
+                <li class = 'menu'> <a href="#">About</a></li>
+               
+            </ul>
+        
+        </nav>
+
+        <!-- 인트로 파트 -->
+        <div class="topic-intro">
+            <h1>문재인 대통령의 지지율은?</h1>
+            <p><i>How Popular Is President Moon?</i></p>
+            <p>Authors : John Doe, Mary Sue</p>
+        </div>
+
+
+        <!-- 메인 파트 -->
+        <section class="main-content">
+                <!-- 사진 부분 -->
+                <div id="moon-photo">
+                </div>
+
+                <!-- 각 토픽 부분 -->
+                <div class="topic-section">
+                    <ul>
+                        <li><a href="#" class='commBtn' >ALL</a></li>
+                        <li><a href="#" class='commBtn' >ILBE</a></li>
+                        <li><a href="#" class='commBtn'>RULIWEB</a></li>
+                        <li><a href="#" class='commBtn'>MLBPARK</a></li>
+                        <li><a href="#" class='commBtn'>82COOK</a></li>
+                    </ul>
+                </div>
+            
+            <!-- 결과창 부분(토픽 따라 바뀔 예정) -->
+            <div id="results">
+                <!-- 왼쪽 버튼 -->
+              
+
+                <div class="result-content" >
+                    <!-- <h5 class = 'results-title'>문재인 대통령 지지율</h5> -->
+                    <canvas id = 'mainChart'></canvas>
+                    </div>
+            
+            </div>
+
+               
+
+        </section>
+        <!--  footer -->
+        <footer>
+            <p> Buisness Name &copy; 2019</p>
+        </footer>
+    </div>
+        
+
+
+       
+
+    <div id="comm-content">
+            <i class="fas fa-times"></i>
+
+
+        <div class="comm-content-container">
+                <div class="graph-container">
+                    <img src="graphs/serios_ruri.png" alt="boxplot" class='result-image'>
+                    <div class="big-number">20%</div>
+                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatibus molestiae ea incidunt consequuntur aut, harum mollitia. Repudiandae, voluptatem sed.</div>
+                </div>
+
+                <div class="graph-container">
+                        <img src="graphs/serios_ruri.png" alt="boxplot" class='result-image'>
+                        <div class="big-number">1위</div>
+                        <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatibus molestiae ea incidunt consequuntur aut, harum mollitia. Repudiandae, voluptatem sed.</div>
+                    </div>
+                <div class="graph-container">
+                        <img src="graphs/serios_ruri.png" alt="boxplot" class='result-image'>
+                        <div class="big-number">553회</div>
+                        <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatibus molestiae ea incidunt consequuntur aut, harum mollitia. Repudiandae, voluptatem sed.</div>
+                    </div>
+                <div class="graph-container">
+                        <img src="graphs/serios_ruri.png" alt="boxplot" class='result-image'>
+                        <div class="big-number">0.72%</div>
+                        <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatibus molestiae ea incidunt consequuntur aut, harum mollitia. Repudiandae, voluptatem sed.</div>
+                    </div>
+                <div class="graph-container">
+                        <img src="graphs/serios_ruri.png" alt="boxplot" class='result-image'>
+                        <div class="big-number">120%</div>
+                        <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatibus molestiae ea incidunt consequuntur aut, harum mollitia. Repudiandae, voluptatem sed.</div>
+                    </div>
+
+
+        </div>
+        
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+    <script src='js/charting.js'></script>
+</body>
+</html>
